@@ -1,0 +1,260 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>webtru ウィジェット 設置サンプル</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <div class="container mx-auto mb-20">
+
+        <div class="container">
+            <h1 class="text-4xl">webtru</h1>
+            <p class="font-bold">
+                ウィジェット設置サンプル
+            </p>
+        </div>
+
+        <section>
+            <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+                <input type="checkbox" />
+                <h2 id="disclosure_notification" class="collapse-title font-bold">公表・通知モード</h2>
+                <div class="collapse-content">
+                    <div class="container">
+                        <h3 id="disclosure_mode" class="font-bold">公表モード(ウィジェット)</h3>
+                        <div class="sample-code">
+                            <p><span class="sample-code-title">設置タグ</span></p>
+                            <div class="overflow-x-auto bg-gray-900">
+                                <div class="whitespace-pre">
+                                    &lt;head&gt;
+                                    &lt;script id=&quot;__datasign_consent_manager__&quot; src=&quot;//cmp.datasign.co/v2/f33a7c95d7/cmp.js&quot; async&gt;&lt;/script&gt;
+                                    ...
+                                    &lt;/head&gt;
+
+                                    &lt;body&gt;
+                                    ...
+                                    &lt;a id=&quot;__datasign_consent_manager_open_widget__&quot; href=&quot;#&quot; onclick=&quot;return false;&quot;&gt;外部送信先について&lt;/a&gt;
+                                    ...
+                                    &lt;/body&gt;
+                                </div>
+                            </div>
+                            <div class="sample-code">
+                                <label for="disclosure_mode_modal" class="btn">動作サンプル</label>
+                                <input type="checkbox" id="disclosure_mode_modal" class="modal-toggle" />
+
+                                <label for="disclosure_mode_modal" class="modal cursor-pointer">
+                                    <label class="modal-box relative" for="">
+                                        <label for="disclosure_mode_modal"
+                                            class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                                        <iframe loading="lazy" height="600" width="100%"
+                                            src="/iframe/disclosure/widget.html"></iframe>
+                                    </label>
+                                </label>
+                            </div>
+                        </div>
+
+                        <hr class="my-8 bg-gray-500">
+
+                        <div class="container">
+                            <h3 id="disclosure_embed_mode" class="font-bold">公表モード(埋込方式)</h3>
+                            <div class="sample-code">
+                                <p><span class="sample-code-title">設置タグ</span></p>
+                                <div class="overflow-x-auto bg-gray-900">
+                                    <div class="whitespace-pre">
+                                        &lt;head&gt;
+                                        &lt;script id=&quot;__datasign_consent_manager__&quot; src=&quot;//cmp.datasign.co/v2/f33a7c95d7/cmp.js&quot; async&gt;&lt;/script&gt;
+                                        ...
+                                        &lt;/head&gt;
+
+                                        &lt;body&gt;
+                                        ...
+                                        &lt;div id=&quot;__datasign_embed_disclosure_mode__&quot; style=&quot;width: 680px;&quot;&gt;&lt;/div&gt;
+                                        ...
+                                        &lt;/body&gt;
+                                    </div>
+                                </div>
+                                <div class="sample-code">
+                                    <label for="disclosure_embed_mode_modal" class="btn">動作サンプル</label>
+                                    <input type="checkbox" id="disclosure_embed_mode_modal" class="modal-toggle" />
+
+                                    <label for="disclosure_embed_mode_modal" class="modal cursor-pointer">
+                                        <label class="modal-box relative" for="">
+                                            <label for="disclosure_embed_mode_modal"
+                                                class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                                            <iframe loading="lazy" height="600" width="100%"
+                                                src="/iframe/disclosure/embed.html"></iframe>
+                                        </label>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <hr class="my-8 bg-gray-500">
+
+                            <div class="container">
+                                <h3 id="notification_mode" class="font-bold">通知モード</h3>
+                                <div class="sample-code">
+                                    <p><span class="sample-code-title">設置タグ</span></p>
+                                    <div class="overflow-x-auto bg-gray-900">
+                                        <div class="whitespace-pre">
+                                            &lt;head&gt;
+                                            &lt;script id=&quot;__datasign_consent_manager__&quot; src=&quot;//cmp.datasign.co/v2/f33a7c95d7/cmp.js&quot; async&gt;&lt;/script&gt;
+                                            ...
+                                            &lt;/head&gt;
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sample-code">
+                                    <label for="notification_mode_modal" class="btn">動作サンプル</label>
+                                    <input type="checkbox" id="notification_mode_modal" class="modal-toggle" />
+
+                                    <label for="notification_mode_modal" class="modal cursor-pointer">
+                                        <label class="modal-box relative" for="">
+                                            <label for="notification_mode_modal"
+                                                class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                                            <iframe loading="lazy" height="600" width="100%"
+                                                src="/iframe/notification.html"></iframe>
+                                        </label>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <hr class="my-8 bg-gray-500">
+                        </div>
+
+                    </div>
+        </section>
+        <hr class="my-8 bg-gray-500">
+        <section>
+            <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+                <input type="checkbox" />
+                <h2 id="disclosure_notification" class="collapse-title font-bold">同意・オプトアウトモード</h2>
+                <div class="collapse-content">
+                    <h3 id="consent_mode" class="font-bold">同意モード</h3>
+                    <div class="sample-code">
+                        <p><span class="sample-code-title">設置タグ</span></p>
+                        <div class="overflow-x-auto bg-gray-900">
+                            <div class="whitespace-pre">
+                                &lt;head&gt;
+                                &lt;script id=&quot;__datasign_consent_manager__&quot; src=&quot;//cmp.datasign.co/v2/dfb5a3c382/cmp.js&quot; async&gt;&lt;/script&gt;
+                                ...
+                                &lt;/head&gt;
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sample-code">
+                        <label for="consent_mode_modal" class="btn">動作サンプル</label>
+                        <input type="checkbox" id="consent_mode_modal" class="modal-toggle" />
+
+                        <label for="consent_mode_modal" class="modal cursor-pointer">
+                            <label class="modal-box relative" for="">
+                                <label for="consent_mode_modal"
+                                    class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                                <iframe loading="lazy" height="600" width="100%"
+                                    src="/iframe/consent/consent.html"></iframe>
+                            </label>
+                        </label>
+                    </div>
+
+                    <hr class="my-8 bg-gray-500">
+
+                    <div class="container">
+                        <h3 id="consent_reject_button_mode" class="font-bold">同意モード(拒否ボタン付き)</h3>
+                        <div class="sample-code">
+                            <p><span class="sample-code-title">設置タグ</span></p>
+                            <div class="overflow-x-auto bg-gray-900">
+                                <div class="whitespace-pre">
+                                    &lt;head&gt;
+                                    &lt;script id=&quot;__datasign_consent_manager__&quot; src=&quot;//cmp.datasign.co/v2/f6cb6080cc/cmp.js&quot; async&gt;&lt;/script&gt;
+                                    ...
+                                    &lt;/head&gt;
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sample-code">
+                            <label for="consent_reject_button_mode_modal" class="btn">動作サンプル</label>
+                            <input type="checkbox" id="consent_reject_button_mode_modal" class="modal-toggle" />
+
+                            <label for="consent_reject_button_mode_modal" class="modal cursor-pointer">
+                                <label class="modal-box relative" for="">
+                                    <label for="consent_reject_button_mode_modal"
+                                        class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                                    <iframe loading="lazy" height="600" width="100%"
+                                        src="/iframe/consent/reject_button.html"></iframe>
+                                </label>
+                            </label>
+                        </div>
+                    </div>
+
+                    <hr class="my-8 bg-gray-500">
+
+                    <div class="container">
+                        <h3 id="optout_button_mode" class="font-bold">オプトアウトモード(ボタン)</h3>
+                        <div class="sample-code">
+                            <p><span class="sample-code-title">設置タグ</span></p>
+                            <div class="overflow-x-auto bg-gray-900">
+                                <div class="whitespace-pre">
+                                    &lt;head&gt;
+                                    &lt;script id=&quot;__datasign_consent_manager__&quot; src=&quot;//cmp.datasign.co/v2/6465cbbda9/cmp.js&quot; async&gt;&lt;/script&gt;
+                                    ...
+                                    &lt;/head&gt;
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sample-code">
+                            <label for="optout_button_mode_modal" class="btn">動作サンプル</label>
+                            <input type="checkbox" id="optout_button_mode_modal" class="modal-toggle" />
+
+                            <label for="optout_button_mode_modal" class="modal cursor-pointer">
+                                <label class="modal-box relative" for="">
+                                    <label for="optout_button_mode_modal"
+                                        class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                                    <iframe loading="lazy" height="600" width="100%"
+                                        src="/iframe/optout/button.html"></iframe>
+                                </label>
+                            </label>
+                        </div>
+                    </div>
+
+                    <hr class="my-8 bg-gray-500">
+
+                    <div class="container">
+                        <h3 id="optout_widget_mode" class="font-bold">オプトアウトモード(ウィジェット)</h3>
+                        <div class="sample-code">
+                            <p><span class="sample-code-title">設置タグ</span></p>
+                            <div class="overflow-x-auto bg-gray-900">
+                                <div class="whitespace-pre">
+                                    &lt;head&gt;
+                                    &lt;script id=&quot;__datasign_consent_manager__&quot; src=&quot;//cmp.datasign.co/v2/5a3c858428/cmp.js&quot; async&gt;&lt;/script&gt;
+                                    ...
+                                    &lt;/head&gt;
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sample-code">
+                            <label for="optout_widget_mode_modal" class="btn">動作サンプル</label>
+                            <input type="checkbox" id="optout_widget_mode_modal" class="modal-toggle" />
+
+                            <label for="optout_widget_mode_modal" class="modal cursor-pointer">
+                                <label class="modal-box relative" for="">
+                                    <label for="optout_widget_mode_modal"
+                                        class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                                    <iframe loading="lazy" height="600" width="100%"
+                                        src="/iframe/optout/widget.html"></iframe>
+                                </label>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
