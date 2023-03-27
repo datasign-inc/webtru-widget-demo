@@ -207,7 +207,40 @@
                     <hr class="my-8 bg-gray-500">
 
                     <div class="container">
-                        <h3 id="optout_button_mode" class="font-bold mb-2">オプトアウトモード(ボタン)</h3>
+                        <h3 id="optout_widget_mode" class="font-bold mb-2">オプトアウトモード</h3>
+                        <div class="mb-4">
+                            <p><span class="sample-code-title">設置タグ</span></p>
+                            <div class="overflow-x-auto bg-gray-200 text-slate-900">
+                                <div class="whitespace-pre">
+                                    &lt;head&gt;
+                                    &lt;script id=&quot;__datasign_consent_manager__&quot;
+                                    src=&quot;//cmp.datasign.co/v2/5a3c858428/cmp.js&quot; async&gt;&lt;/script&gt;
+                                    ...
+                                    &lt;/head&gt;
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sample-code">
+                            <label for="optout_widget_mode_modal"
+                                class="btn btn-outline text-neutral-900">動作サンプル</label>
+                            <input type="checkbox" id="optout_widget_mode_modal" class="modal-toggle" />
+
+                            <label for="optout_widget_mode_modal" class="modal cursor-pointer">
+                                <label class="modal-box relative h-5/6 w-11/12 max-w-5xl" for="">
+                                    <label for="optout_widget_mode_modal"
+                                        class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                                    <iframe loading="lazy" height="100%" width="100%"
+                                        src="iframe/optout/widget.html"></iframe>
+                                </label>
+                            </label>
+                        </div>
+                    </div>
+
+                    <hr class="my-8 bg-gray-500">
+
+                    <div class="container">
+                        <h3 id="optout_button_mode" class="font-bold mb-2">オプトアウトモード(ボタン方式)</h3>
                         <div class="mb-4">
                             <p><span class="sample-code-title">設置タグ</span></p>
                             <div class="overflow-x-auto bg-gray-200 text-slate-900">
@@ -237,38 +270,6 @@
                         </div>
                     </div>
 
-                    <hr class="my-8 bg-gray-500">
-
-                    <div class="container">
-                        <h3 id="optout_widget_mode" class="font-bold mb-2">オプトアウトモード(ウィジェット)</h3>
-                        <div class="mb-4">
-                            <p><span class="sample-code-title">設置タグ</span></p>
-                            <div class="overflow-x-auto bg-gray-200 text-slate-900">
-                                <div class="whitespace-pre">
-                                    &lt;head&gt;
-                                    &lt;script id=&quot;__datasign_consent_manager__&quot;
-                                    src=&quot;//cmp.datasign.co/v2/5a3c858428/cmp.js&quot; async&gt;&lt;/script&gt;
-                                    ...
-                                    &lt;/head&gt;
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="sample-code">
-                            <label for="optout_widget_mode_modal"
-                                class="btn btn-outline text-neutral-900">動作サンプル</label>
-                            <input type="checkbox" id="optout_widget_mode_modal" class="modal-toggle" />
-
-                            <label for="optout_widget_mode_modal" class="modal cursor-pointer">
-                                <label class="modal-box relative h-5/6 w-11/12 max-w-5xl" for="">
-                                    <label for="optout_widget_mode_modal"
-                                        class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-                                    <iframe loading="lazy" height="100%" width="100%"
-                                        src="iframe/optout/widget.html"></iframe>
-                                </label>
-                            </label>
-                        </div>
-                    </div>
                 </div>
 
             </div>
