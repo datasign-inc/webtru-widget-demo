@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>webtru ウィジェット 設置サンプル</title>
+    <script>
+        // 初期表示状態を再現するために表示毎にローカルストレージをクリアする
+        localStorage.clear();
+    </script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -49,10 +53,10 @@
                             <input type="checkbox" id="disclosure_mode_modal" class="modal-toggle" />
 
                             <label for="disclosure_mode_modal" class="modal cursor-pointer">
-                                <label class="modal-box relative" for="">
+                                <label class="modal-box relative h-5/6 w-11/12 max-w-5xl" for="">
                                     <label for="disclosure_mode_modal"
                                         class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-                                    <iframe loading="lazy" height="600" width="100%"
+                                    <iframe loading="lazy" height="100%" width="100%"
                                         src="iframe/disclosure/widget.html"></iframe>
                                 </label>
                             </label>
@@ -87,10 +91,10 @@
                                 <input type="checkbox" id="disclosure_embed_mode_modal" class="modal-toggle" />
 
                                 <label for="disclosure_embed_mode_modal" class="modal cursor-pointer">
-                                    <label class="modal-box relative" for="">
+                                    <label class="modal-box relative h-5/6 w-11/12 max-w-5xl" for="">
                                         <label for="disclosure_embed_mode_modal"
                                             class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-                                        <iframe loading="lazy" height="600" width="100%"
+                                        <iframe loading="lazy" height="100%" width="100%"
                                             src="iframe/disclosure/embed.html"></iframe>
                                     </label>
                                 </label>
@@ -112,6 +116,20 @@
                                             &lt;/head&gt;
                                         </div>
                                     </div>
+                                </div>
+                                <div class="sample-code">
+                                    <label for="disclosure_embed_mode_modal"
+                                        class="btn btn-outline text-neutral-900">動作サンプル</label>
+                                    <input type="checkbox" id="disclosure_embed_mode_modal" class="modal-toggle" />
+    
+                                    <label for="disclosure_embed_mode_modal" class="modal cursor-pointer">
+                                        <label class="modal-box relative h-5/6 w-11/12 max-w-5xl" for="">
+                                            <label for="disclosure_embed_mode_modal"
+                                                class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                                            <iframe loading="lazy" height="100%" width="100%"
+                                                src="iframe/notification.html"></iframe>
+                                        </label>
+                                    </label>
                                 </div>
                             </div>
 
@@ -144,10 +162,10 @@
                         <input type="checkbox" id="consent_mode_modal" class="modal-toggle" />
 
                         <label for="consent_mode_modal" class="modal cursor-pointer">
-                            <label class="modal-box relative" for="">
+                            <label class="modal-box relative h-5/6 w-11/12 max-w-5xl" for="">
                                 <label for="consent_mode_modal"
                                     class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-                                <iframe loading="lazy" height="600" width="100%"
+                                <iframe loading="lazy" height="100%" width="100%"
                                     src="iframe/consent/consent.html"></iframe>
                             </label>
                         </label>
@@ -163,7 +181,7 @@
                                 <div class="whitespace-pre">
                                     &lt;head&gt;
                                     &lt;script id=&quot;__datasign_consent_manager__&quot;
-                                    src=&quot;//cmp.datasign.co/v2/f6cb6080cc/cmp.js&quot; async&gt;&lt;/script&gt;
+                                    src=&quot;//cmp.datasign.co/v2/96a0e94fea/cmp.js&quot; async&gt;&lt;/script&gt;
                                     ...
                                     &lt;/head&gt;
                                 </div>
@@ -176,10 +194,10 @@
                             <input type="checkbox" id="consent_reject_button_mode_modal" class="modal-toggle" />
 
                             <label for="consent_reject_button_mode_modal" class="modal cursor-pointer">
-                                <label class="modal-box relative" for="">
+                                <label class="modal-box relative h-5/6 w-11/12 max-w-5xl" for="">
                                     <label for="consent_reject_button_mode_modal"
                                         class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-                                    <iframe loading="lazy" height="600" width="100%"
+                                    <iframe loading="lazy" height="100%" width="100%"
                                         src="iframe/consent/reject_button.html"></iframe>
                                 </label>
                             </label>
@@ -209,10 +227,10 @@
                             <input type="checkbox" id="optout_button_mode_modal" class="modal-toggle" />
 
                             <label for="optout_button_mode_modal" class="modal cursor-pointer">
-                                <label class="modal-box relative" for="">
+                                <label class="modal-box relative h-5/6 w-11/12 max-w-5xl" for="">
                                     <label for="optout_button_mode_modal"
                                         class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-                                    <iframe loading="lazy" height="600" width="100%"
+                                    <iframe loading="lazy" height="100%" width="100%"
                                         src="iframe/optout/button.html"></iframe>
                                 </label>
                             </label>
@@ -242,10 +260,10 @@
                             <input type="checkbox" id="optout_widget_mode_modal" class="modal-toggle" />
 
                             <label for="optout_widget_mode_modal" class="modal cursor-pointer">
-                                <label class="modal-box relative" for="">
+                                <label class="modal-box relative h-5/6 w-11/12 max-w-5xl" for="">
                                     <label for="optout_widget_mode_modal"
                                         class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-                                    <iframe loading="lazy" height="600" width="100%"
+                                    <iframe loading="lazy" height="100%" width="100%"
                                         src="iframe/optout/widget.html"></iframe>
                                 </label>
                             </label>
@@ -260,7 +278,6 @@
         // ページ内のH3タグに遷移できるアンカーを自動で追加
         document.querySelectorAll('h3').forEach(function (heading) {
             var link = document.createElement('a');
-            console.log(heading.textContent);
             link.setAttribute('href', `#:~:text=${heading.textContent}¶`);
             link.textContent = "¶";
             heading.appendChild(link);
