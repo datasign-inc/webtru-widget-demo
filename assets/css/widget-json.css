@@ -62,6 +62,7 @@ a._opn_node_items {
     border-bottom: 1px solid #CCC;
     border-right: 1px solid #CCC;
     text-decoration: none;
+    color: #3273dc;
 }
 
 a._opn_node_items:hover {
