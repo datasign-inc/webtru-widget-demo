@@ -25,7 +25,7 @@
         <section>
             <div tabindex="0" class="collapse border border-base-300 rounded-box collapse-open">
                 <input type="checkbox" />
-                <h2 id="disclosure_notification" class="collapse-title font-bold">公表・通知モード</h2>
+                <h2 class="collapse-title font-bold">公表・通知モード</h2>
                 <div class="collapse-content">
                     <div class="container">
                         <h3 id="disclosure_mode" class="font-bold mb-2">公表モード（リンク方式）</h3>
@@ -142,7 +142,7 @@
         <section>
             <div tabindex="0" class="collapse border border-base-300 rounded-box collapse-open">
                 <input type="checkbox" />
-                <h2 id="disclosure_notification" class="collapse-title font-bold">同意・オプトアウトモード</h2>
+                <h2 class="collapse-title font-bold">同意・オプトアウトモード</h2>
                 <div class="collapse-content">
                     <h3 id="consent_mode" class="font-bold mb-2">同意モード(拒否ボタンなし)</h3>
                     <div class="mb-4">
@@ -274,6 +274,35 @@
 
             </div>
         </section>
+        <hr class="my-8 bg-gray-500">
+        <section>
+            <div class="border border-base-300 rounded-box collapse-open">
+                <h2 class="collapse-title font-bold">JSONファイル</h2>
+                <div class="collapse-content">
+                    <div class="container">
+                        <h3 class="font-bold mb-2">オンラインプライバシー通知</h3>
+                        <div class="mb-4">
+                            <p><span class="sample-code-title">JSONファイル参照URL</span></p>
+                            <div class="overflow-x-auto bg-gray-200 text-slate-900">
+                                <div class="whitespace-pre">
+                                    https://cmp.datasign.co/v2/※※※※※※/opn.json
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>設置サンプルコード（jQueryを利用しています）</p>
+
+                        <div class="sample-code">
+                            <p>
+                                <span class="sample-code-title">動作サンプル</span>
+                                オンラインプライバシー通知をページに展開するサンプルです。
+                            </p>
+                            <div id="online-privacy-notice"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
     <script>
         // ページ内のH3タグに遷移できるアンカーを自動で追加
@@ -284,6 +313,10 @@
             heading.appendChild(link);
         });
     </script>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/widget-json.css">
+    <script src="assets/js/widget-json.js"></script>
 </body>
 
 </html>
