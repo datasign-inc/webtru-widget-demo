@@ -228,9 +228,9 @@
         }
       }
 
-      function SmCheck() {
-        return window.outerWidth <= 600;
-      }
+    function SmCheck() {
+      return window.innerWidth <= 600;
+    }
 
       $("a._opn_node_items").each(function () {
         if (this.href.indexOf(location.host) >= 0) {
